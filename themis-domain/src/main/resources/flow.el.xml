@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themis>
+
+    <ql>
+        THEN(a,b,WHEN(c,d))
+    </ql>
+
+    <refs>
+        <ref source="a" from="b">
+            <mappings>
+                <mapping>
+                    <source>id</source>
+                    <from>codeId</from>
+                </mapping>
+            </mappings>
+        </ref>
+    </refs>
+
+    <perpares>
+        <perpare from="a">
+            <field>id</field>
+            <type>String</type>
+            <value>1</value>
+        </perpare>
+    </perpares>
+
+</themis>

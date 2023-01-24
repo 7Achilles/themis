@@ -23,9 +23,5 @@ public class ThemisChoreographyServiceImpl implements ThemisChoreographyService 
     }
 
 
-//    public static void main(String[] args) {
-//        CompletableFuture.supplyAsync(()->1)
-//                .get(2000, TimeUnit.MILLISECONDS);
-//    }
 
 }

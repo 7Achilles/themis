@@ -16,7 +16,7 @@ public class GlobalExceptionHandler {
 
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
-    public ThemisResponse doGlobalExceptionHandler(Exception exception) {
+    public ThemisResponse<Object> doGlobalExceptionHandler(Exception exception) {
         logger.error(exception.getMessage(),exception);
         if (exception instanceof MethodArgumentNotValidException)
             return ThemisResponse.error(((MethodArgumentNotValidException) exception).getBindingResult().getAllErrors().get(0).getDefaultMessage());
